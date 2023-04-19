@@ -51,6 +51,14 @@ public class MyArrayList<G> {
         }
         return -1;
     }
+    public int lastIndexOf(Object a) {
+        for (int i = size - 1; i >= 0; i--) {
+            if (a.equals(array[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
 
 
