@@ -9,18 +9,18 @@ public class MyArrayList<G> {//creating generic MyArrayList
     public MyArrayList() {//creating own class
         array = new Object[capacity];
     }
-    public int size() { //checking the size of array
+    public int size() { //checking the size of arraylist
         return size;
     }
 
-    public void add(G item) {   // adding element into array
+    public void add(G item) {   // adding element into arraylist
         if (size == capacity) {
             Increasearray();
         }
         array[size++] = item;
     }
 
-    private void Increasearray() {  // increasing size of an array
+    private void Increasearray() {  // increasing size of an arraylist
         capacity = (int) (2 * capacity);
         Object[] newarr = new Object[capacity];
         for (int i = 0; i < size; i++) {

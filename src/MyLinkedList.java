@@ -23,10 +23,10 @@ public class MyLinkedList<E> {//creating generic MyLinkedList
     }
     public int size() {
         return size;
-    }//checking the size of array
+    }//checking the size of linkedlist
 
 
-    public void add(E element) {//adding elements to array
+    public void add(E element) {//adding elements to linkedlist
         node node2 = new node(element, null, tail);
         if (head == null) {
             head = tail = node2;
