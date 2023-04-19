@@ -29,6 +29,10 @@ public class MyArrayList<G> {
     public int size() {
         return size;
     }
+
+    public G get(int index) {
+        return (G) array[index];
+    }
 }
 
 
