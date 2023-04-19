@@ -9,6 +9,8 @@ public class Main {
         alm.add(5);
         System.out.println(alm.size());
         System.out.println(alm.get(3));
+        System.out.println(alm.remove(1));
+        System.out.println(alm.size());
     }
 }
 

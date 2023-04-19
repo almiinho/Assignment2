@@ -33,6 +33,16 @@ public class MyArrayList<G> {
     public G get(int index) {
         return (G) array[index];
     }
+
+    public G remove(int index) {
+
+        G removeditem = (G) array[index];
+        for (int i = index; i < size - 1; i++) {
+            array[i] = array[i + 1];
+        }
+        size--;
+        return removeditem;
+    }
 }
 
 
