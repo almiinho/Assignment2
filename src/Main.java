@@ -16,6 +16,11 @@ public class Main {
         System.out.println("End of  using ArrayList");
 
         MyLinkedList<String> ll = new MyLinkedList<>();
+        ll.add("Real Madrid");
+        ll.add("Barcelona");
+        ll.add("PSG");
+        ll.add("Napoli");
+        ll.add("Irtysh");
     }
 }
 
