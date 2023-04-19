@@ -8,7 +8,7 @@ public class Main {
         alm.add(4);
         alm.add(5);
         System.out.println(alm.size());//checking the size of array
-        System.out.println(alm.get(3));
+        System.out.println(alm.get(3));//getting data of index 3
         System.out.println(alm.remove(2));
         System.out.println(alm.size());//checking the size of array
         System.out.println(alm.indexOf(1));
@@ -22,7 +22,7 @@ public class Main {
         ll.add("PSG");
         ll.add("Napoli");
         ll.add("Irtysh");
-        System.out.println(ll.get(0));
+        System.out.println(ll.get(0));//getting data of index 0
         System.out.println(ll.remove(3));
         System.out.println(ll.size());//checking the size of array
         System.out.println("End of  using LinkedList");
