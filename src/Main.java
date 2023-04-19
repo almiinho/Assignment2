@@ -11,6 +11,7 @@ public class Main {
         System.out.println(alm.get(3));
         System.out.println(alm.remove(1));
         System.out.println(alm.size());
+        System.out.println(alm.indexOf(1));
     }
 }
 
