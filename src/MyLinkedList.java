@@ -1,4 +1,4 @@
-public class MyLinkedList<E> {
+public class MyLinkedList<E> {//creating generic MyLinkedList
     private class node {
         E element;
         node next;
