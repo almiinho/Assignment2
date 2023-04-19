@@ -23,10 +23,10 @@ public class MyLinkedList<E> {
     }
     public int size() {
         return size;
-    }
+    }//checking the size of array
 
 
-    public void add(E element) {
+    public void add(E element) {//adding elements to array
         node node2 = new node(element, null, tail);
         if (head == null) {
             head = tail = node2;
@@ -39,7 +39,7 @@ public class MyLinkedList<E> {
 
     }
 
-    public E get(int index) {
+    public E get(int index) {//accessing data
         node current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
@@ -49,7 +49,7 @@ public class MyLinkedList<E> {
         return current.element;
     }
 
-    public E remove(int index){
+    public E remove(int index){//removing data
         node current=head;
 
             for (int i = 0; i < index; i++) {
