@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MyArrayList<G> {
+public class MyArrayList<G> {//creating generic MyArrayList
     public Object add;
     private Object[] array;
     private int size = 0;
