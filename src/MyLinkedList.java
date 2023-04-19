@@ -21,6 +21,10 @@ public class MyLinkedList<E> {
         tail = null;
         size = 0;
     }
+    public int size() {
+        return size;
+    }
+
 
     public void add(E element) {
         node node2 = new node(element, null, tail);
@@ -55,4 +59,5 @@ public class MyLinkedList<E> {
         return current.element;
     }
 }
+
 

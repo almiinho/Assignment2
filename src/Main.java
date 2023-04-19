@@ -23,6 +23,7 @@ public class Main {
         ll.add("Irtysh");
         System.out.println(ll.get(0));
         System.out.println(ll.remove(3));
+        System.out.println(ll.size());
     }
 }
 
