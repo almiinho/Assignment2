@@ -6,8 +6,11 @@ public class MyArrayList<G> {
     private int size = 0;
     private int capacity = 5;
 
-    public MyArrayList() {
+    public MyArrayList() {//creating own class
         array = new Object[capacity];
+    }
+    public int size() { //checking the size of array
+        return size;
     }
 
     public void add(G item) {   // adding element into array
@@ -26,9 +29,6 @@ public class MyArrayList<G> {
         array = newarr;
     }
 
-    public int size() {
-        return size;
-    }
 
     public G get(int index) {  // accessing data
         return (G) array[index];

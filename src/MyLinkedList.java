@@ -11,18 +11,21 @@ public class MyLinkedList<E> {
 
         }
     }
+
     private node head;
     private node tail;
     private int size;
+
     public MyLinkedList() {
         head = null;
         tail = null;
         size = 0;
     }
+
     public void add(E element) {
         node node2 = new node(element, null, tail);
         if (head == null) {
-            head =tail= node2;
+            head = tail = node2;
         } else {
             tail.next = node2;
             tail = node2;
@@ -31,12 +34,23 @@ public class MyLinkedList<E> {
         size++;
 
     }
-    public E get(int index) {
-        node current=head;
-       for(int i=0; i<index;i++){
-           current=current.next;
 
-       }
+    public E get(int index) {
+        node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+
+        }
+
+        return current.element;
+    }
+
+    public E remove(int index){
+        node current=head;
+
+            for (int i = 0; i < index; i++) {
+                current = current.next;
+            }
 
         return current.element;
     }
