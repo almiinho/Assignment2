@@ -51,7 +51,7 @@ public class MyArrayList<G> {
         }
         return -1;
     }
-    public int lastIndexOf(Integer a) {
+    public int lastIndexOf(Integer a) {//checking last occurrence
         for (int i = size - 1; i >= 0; i--) {
             if (a.equals(array[i])) {
                 return i;
