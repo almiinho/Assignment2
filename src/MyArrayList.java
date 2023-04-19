@@ -43,7 +43,7 @@ public class MyArrayList<G> {
         size--;
         return removeditem;
     }
-    public int indexOf(Integer a) { //
+    public int indexOf(Integer a) { //checking first occurrence
         for (int i = 0; i < size; i++) {
             if (a.equals(array[i])) {
                 return i;
