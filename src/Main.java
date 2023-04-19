@@ -9,7 +9,7 @@ public class Main {
         alm.add(5);
         System.out.println(alm.size());//checking the size of array
         System.out.println(alm.get(3));//getting data of index 3
-        System.out.println(alm.remove(2));
+        System.out.println(alm.remove(2));//removing element of index 2 from array
         System.out.println(alm.size());//checking the size of array
         System.out.println(alm.indexOf(1));
         System.out.println(alm.lastIndexOf(1));
@@ -23,7 +23,7 @@ public class Main {
         ll.add("Napoli");
         ll.add("Irtysh");
         System.out.println(ll.get(0));//getting data of index 0
-        System.out.println(ll.remove(3));
+        System.out.println(ll.remove(3));//removing element of index 3 from array
         System.out.println(ll.size());//checking the size of array
         System.out.println("End of  using LinkedList");
     }
