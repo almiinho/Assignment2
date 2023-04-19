@@ -11,8 +11,8 @@ public class Main {
         System.out.println(alm.get(3));//getting data of index 3
         System.out.println(alm.remove(2));//removing element of index 2 from array
         System.out.println(alm.size());//checking the size of array
-        System.out.println(alm.indexOf(1));//
-        System.out.println(alm.lastIndexOf(1));
+        System.out.println(alm.indexOf(1));//checking first occurrence
+        System.out.println(alm.lastIndexOf(1));//checking last occurrence
         System.out.println("End of  using ArrayList");
 
         MyLinkedList<String> ll = new MyLinkedList<>();
