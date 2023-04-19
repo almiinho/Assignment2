@@ -11,4 +11,12 @@ public class MyLinkedList<E> {
 
         }
     }
+    private node head;
+    private node tail;
+    private int size;
+    public MyLinkedList() {
+        head = null;
+        tail = null;
+        size = 0;
+    }
 }
