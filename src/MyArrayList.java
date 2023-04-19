@@ -1,7 +1,7 @@
-import java.util.Arrays;
+
 
 public class MyArrayList<G> {//creating generic MyArrayList
-    public Object add;
+
     private Object[] array;
     private int size = 0;
     private int capacity = 5;
