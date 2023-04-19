@@ -10,14 +10,14 @@ public class MyArrayList<G> {
         array = new Object[capacity];
     }
 
-    public void add(G item) {
+    public void add(G item) {   // adding element into array
         if (size == capacity) {
             Increasearray();
         }
         array[size++] = item;
     }
 
-    private void Increasearray() {
+    private void Increasearray() {  // increasing size of an array
         capacity = (int) (2 * capacity);
         Object[] newarr = new Object[capacity];
         for (int i = 0; i < size; i++) {
@@ -30,11 +30,11 @@ public class MyArrayList<G> {
         return size;
     }
 
-    public G get(int index) {
+    public G get(int index) {  // accessing data
         return (G) array[index];
     }
 
-    public G remove(int index) {
+    public G remove(int index) { // removing data
 
         G removeditem = (G) array[index];
         for (int i = index; i < size - 1; i++) {
@@ -43,7 +43,7 @@ public class MyArrayList<G> {
         size--;
         return removeditem;
     }
-    public int indexOf(Integer a) {
+    public int indexOf(Integer a) { //
         for (int i = 0; i < size; i++) {
             if (a.equals(array[i])) {
                 return i;

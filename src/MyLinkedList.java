@@ -19,16 +19,17 @@ public class MyLinkedList<E> {
         tail = null;
         size = 0;
     }
-    public boolean add(E element) {
+    public void add(E element) {
         node node2 = new node(element, null, tail);
-        if (size == 0) {
-            head = node2;
+        if (head == null) {
+            head =tail= node2;
         } else {
             tail.next = node2;
+            tail = node2;
         }
-        tail = node2;
+
         size++;
-        return true;
+
     }
     public E get(int index) {
         node present;
