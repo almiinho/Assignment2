@@ -21,6 +21,7 @@ public class Main {
         ll.add("PSG");
         ll.add("Napoli");
         ll.add("Irtysh");
+        System.out.println("First club is "+ll.get(1));
     }
 }
 

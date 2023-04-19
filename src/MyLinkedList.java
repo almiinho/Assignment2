@@ -30,5 +30,21 @@ public class MyLinkedList<E> {
         size++;
         return true;
     }
+    public E get(int index) {
+        node present;
+        if (index < size / 2) {
+            present = head;
+            for (int i = 0; i < index; i++) {
+                present = present.next;
+            }
+        } else {
+            present = tail;
+            for (int i = size - 1; i > index; i--) {
+                present = present.previous;
+            }
+        }
+
+        return present.element;
+    }
 }
 
