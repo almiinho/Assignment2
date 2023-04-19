@@ -13,6 +13,7 @@ public class Main {
         System.out.println(alm.size());
         System.out.println(alm.indexOf(1));
         System.out.println(alm.lastIndexOf(1));
+        System.out.println("End of  using ArrayList");
     }
 }
 

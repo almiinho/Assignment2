@@ -43,7 +43,7 @@ public class MyArrayList<G> {
         size--;
         return removeditem;
     }
-    public int indexOf(Object a) {
+    public int indexOf(Integer a) {
         for (int i = 0; i < size; i++) {
             if (a.equals(array[i])) {
                 return i;
@@ -51,7 +51,7 @@ public class MyArrayList<G> {
         }
         return -1;
     }
-    public int lastIndexOf(Object a) {
+    public int lastIndexOf(Integer a) {
         for (int i = size - 1; i >= 0; i--) {
             if (a.equals(array[i])) {
                 return i;
